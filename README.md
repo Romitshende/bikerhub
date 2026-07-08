@@ -27,5 +27,6 @@ A high-performance digital atelier for motorcycle enthusiasts. BikerHub bridges 
   ```
 4. Open 
   ```bash
-   http://localhost:3000 in your browser.
-  ```
+   http://localhost:3000
+   ```
+   in your browser.
