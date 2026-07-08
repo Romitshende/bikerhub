@@ -39,23 +39,23 @@ export default function Home() {
   </div>
 </header>
 {/* Bento Grid */}
-<div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-162.5">
+<div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto">
   
   {/* Large Feature */}
-  <div className="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-4xl border border-white/10 bg-slate-900">
+  <div className="col-span-1 md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-3xl border border-white/10 bg-slate-900 h-80 md:h-162.5">
     <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent z-10" />
     <img 
       src={routes[0].img} 
       className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105" 
     />
-    <div className="absolute bottom-10 left-10 z-20">
+    <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 z-20">
       <span className="text-[10px] bg-cyan-500 text-black px-3 py-1 font-bold rounded-full">{routes[0].tag}</span>
-      <h2 className="text-5xl font-black mt-4 leading-none">{routes[0].title}</h2>
+      <h2 className="text-3xl md:text-5xl font-black mt-4 leading-none">{routes[0].title}</h2>
     </div>
   </div>
 
   {/* Secondary 1 */}
-  <div className="md:col-span-2 md:row-span-1 relative group overflow-hidden rounded-4xl border border-white/10 bg-slate-900 flex items-center p-8">
+  <div className="col-span-1 md:col-span-2 md:row-span-1 relative group overflow-hidden rounded-3xl border border-white/10 bg-slate-900 flex items-center p-6 md:p-8 h-48">
     <div className="absolute inset-0 bg-black/60 z-10" />
     <img 
       src={routes[1].img} 
@@ -64,7 +64,7 @@ export default function Home() {
     <div className="relative z-20 w-full flex justify-between items-center">
       <div>
         <span className="text-[9px] text-cyan-400 font-bold tracking-widest uppercase">{routes[1].tag}</span>
-        <h2 className="text-3xl font-black mt-1">{routes[1].title}</h2>
+        <h2 className="text-2xl md:text-3xl font-black mt-1">{routes[1].title}</h2>
       </div>
       <div className="text-right">
         <p className="text-slate-400 font-mono text-[10px] uppercase">Distance</p>
@@ -74,7 +74,7 @@ export default function Home() {
   </div>
 
   {/* Secondary 2 */}
-  <div className="md:col-span-2 md:row-span-1 relative group overflow-hidden rounded-4xl border border-white/10 bg-slate-900 flex items-center p-8">
+  <div className="col-span-1 md:col-span-2 md:row-span-1 relative group overflow-hidden rounded-3xl border border-white/10 bg-slate-900 flex items-center p-6 md:p-8 h-48">
     <div className="absolute inset-0 bg-black/60 z-10" />
     <img 
       src={routes[2].img} 
@@ -83,7 +83,7 @@ export default function Home() {
     <div className="relative z-20 w-full flex justify-between items-center">
       <div>
         <span className="text-[9px] text-cyan-400 font-bold tracking-widest uppercase">{routes[2].tag}</span>
-        <h2 className="text-3xl font-black mt-1">{routes[2].title}</h2>
+        <h2 className="text-2xl md:text-3xl font-black mt-1">{routes[2].title}</h2>
       </div>
       <div className="text-right">
         <p className="text-slate-400 font-mono text-[10px] uppercase">Distance</p>
