@@ -17,7 +17,7 @@ A high-performance digital atelier for motorcycle enthusiasts. BikerHub bridges 
    ```bash
    git clone [https://github.com/Romitshende/bikerhub.git](https://github.com/Romitshende/bikerhub.git)
    ```
-2.Install dependencies:
+2. Install dependencies:
   ```bash
    npm install
   ```
@@ -25,7 +25,7 @@ A high-performance digital atelier for motorcycle enthusiasts. BikerHub bridges 
   ```bash
    npm run dev
   ```
-4.Open 
-```bash
+4. Open 
+  ```bash
    http://localhost:3000 in your browser.
-```
+  ```
