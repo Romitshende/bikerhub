@@ -1,0 +1,57 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String
+  image     String?  // Profile picture URL
+  bikes     Bike[]
+  routes    Route[]
+  rsvps     RideAttendee[]
+  createdAt DateTime @default(now())
+}
+
+model Bike {
+  id            String   @id @default(uuid())
+  modelName     String   // e.g., "BMW S1000 RR"
+  modifications String?  // Optional text
+  userId        String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Route {
+  id          String   @id @default(uuid())
+  title       String
+  coordinates Json     // Array of points [[lat, lng], [lat, lng]]
+  tags        String[] // ["Twisties", "Smooth Asphalt"]
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  rides       Ride[]
+  createdAt   DateTime @default(now())
+}
+
+model Ride {
+  id          String   @id @default(uuid())
+  meetTime    DateTime
+  description String
+  routeId     String
+  route       Route    @relation(fields: [routeId], references: [id], onDelete: Cascade)
+  attendees   RideAttendee[]
+}
+
+model RideAttendee {
+  id      String @id @default(uuid())
+  userId  String
+  rideId  String
+  user    User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  ride    Ride   @relation(fields: [rideId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, rideId]) // Prevents double RSVPing to the same ride
+}
