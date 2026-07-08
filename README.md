@@ -18,8 +18,13 @@ A high-performance digital atelier for motorcycle enthusiasts. BikerHub bridges 
    git clone [https://github.com/Romitshende/bikerhub.git](https://github.com/Romitshende/bikerhub.git)
 2.Install dependencies:
   ```bash
-   npm install)
+   npm install
+```
 3. Run the development server:
   ```bash
-   npm run dev)
-4.Open http://localhost:3000 in your browser.
+   npm run dev
+```
+4.Open 
+```bash
+http://localhost:3000 in your browser.
+```
