@@ -42,11 +42,11 @@ export default function Home() {
 <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto">
   
   {/* Large Feature */}
-  <div className="col-span-1 md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-3xl border border-white/10 bg-slate-900 h-80 md:h-162.5">
+  <div className="col-span-1 md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-3xl border border-white/10 bg-slate-900 h-80 md:h-[650px]">
     <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent z-10" />
     <img 
       src={routes[0].img} 
-      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105" 
+      className="w-full h-full object-cover grayscale grayscale-0 md:grayscale group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105" 
     />
     <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 z-20">
       <span className="text-[10px] bg-cyan-500 text-black px-3 py-1 font-bold rounded-full">{routes[0].tag}</span>
@@ -59,7 +59,7 @@ export default function Home() {
     <div className="absolute inset-0 bg-black/60 z-10" />
     <img 
       src={routes[1].img} 
-      className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105" 
+      className="absolute inset-0 w-full h-full object-cover grayscale grayscale-0 md:grayscale group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105" 
     />
     <div className="relative z-20 w-full flex justify-between items-center">
       <div>
@@ -78,7 +78,7 @@ export default function Home() {
     <div className="absolute inset-0 bg-black/60 z-10" />
     <img 
       src={routes[2].img} 
-      className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105" 
+      className="absolute inset-0 w-full h-full object-cover grayscale grayscale-0 md:grayscale group-hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105" 
     />
     <div className="relative z-20 w-full flex justify-between items-center">
       <div>
