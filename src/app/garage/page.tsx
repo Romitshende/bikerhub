@@ -5,7 +5,7 @@ export default function GaragePage() {
   const [isOwner, setIsOwner] = useState(true);
   const riderProfile = {
     name: "Riya Roy",
-    role: "Engineer & Track Rider",
+    role: "Track Rider",
     avatar: "/avatar.png",
     bio: "Obsessed with apex corners and high-performance engineering. When I'm not piloting commercial jets, you'll find me tearing down the canyon twisties on a cafe racer or dialing in track telemetry.",
   };
