@@ -25,8 +25,7 @@ A high-performance digital atelier for motorcycle enthusiasts. BikerHub bridges 
   ```bash
    npm run dev
   ```
-4. Open 
+4. Open this in your browser
   ```bash
    http://localhost:3000
    ```
-   in your browser.
